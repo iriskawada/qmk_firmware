@@ -63,7 +63,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             return false;
         case TVNC_EXIT_FS:
             if (record->event.pressed) {
-                SEND_STRING(SS_LCTRL(SS_LSFT(SS_LALT("f"))));
+                SEND_STRING(SS_LCTL(SS_LSFT(SS_LALT("f"))));
             }
     }
     return true;
